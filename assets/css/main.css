@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #272424;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -2596,7 +2596,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								100%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2604,7 +2604,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 30%;
 	}
 
 		#header > * {
@@ -2628,7 +2628,7 @@ input, select, textarea {
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #050505;
 		}
 
 		#header h1 {
@@ -2640,7 +2640,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 16.25em;
 		}
 
 /* Footer */
@@ -3237,3 +3237,15 @@ input, select, textarea {
 	height: 100%;
 	object-fit: cover; /* Cover the entire area of the container without stretching the video */
 }
+
+
+#about-me.semi-transparent-background {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Optional: Adds some space inside the container */
+	margin: 20px;
+	box-sizing: border-box;
+    border-radius: 20px; /* Optional: Rounds the corners of the background */
+	text-align: justify;
+	text-align-last: left;
+}
+
