@@ -135,8 +135,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
-		font-weight: 400;
+		color: #312525;
+		font-weight: 900;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -295,8 +295,8 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
+		/* box-sizing: border-box;
+		align-items: stretch; */
 	}
 
 		.row > * {
@@ -376,7 +376,9 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
-			width: 50%;
+			/* width: 50%; */
+			flex: 0 0 48%;
+			box-sizing: border-box;
 		}
 
 		.row > .off-6 {
@@ -1647,7 +1649,8 @@ input, select, textarea {
 				}
 
 				.row > .col-12-xsmall {
-					width: 100%;
+					/* width: 100%; */
+					flex: 0 0 100%
 				}
 
 				.row > .off-12-xsmall {
@@ -2443,13 +2446,13 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #0a0a0a !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 700;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
@@ -2554,7 +2557,14 @@ input, select, textarea {
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
+		background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+		padding: 20px; /* Optional: Adds some space inside the container */
+		margin: 20px;
+		box-sizing: border-box;
+		border-radius: 20px; /* Optional: Rounds the corners of the background */
+		text-align: justify;
+		text-align-last: left;
 	}
 
 		.work-item .image {
@@ -3249,3 +3259,23 @@ input, select, textarea {
 	text-align-last: left;
 }
 
+.col-6.col-12-xsmall.work-item {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Optional: Adds some space inside the container */
+	margin: 20px;
+	box-sizing: border-box;
+    border-radius: 20px; /* Optional: Rounds the corners of the background */
+	text-align: justify;
+	text-align-last: left;
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Optional: Adds some space inside the container */
+	margin: 20px;
+	box-sizing: border-box;
+    border-radius: 20px; /* Optional: Rounds the corners of the background */
+	text-align: justify;
+	text-align-last: left;
+	display: inline-block;
+}
